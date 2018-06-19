@@ -31,3 +31,9 @@ function sendQuestion() {
     }};
     xhr.send(data); */
 }
+
+$(document).ready(function(){
+    $("sendButton").click(function(){
+        console.log("sendQuestion");
+    });
+});
