@@ -1,4 +1,4 @@
-var messages;
+var url = "https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/fb1ba974-ac5c-40f2-8236-faf5a657df49?subscription-key=3bfef3d064f24ccb8eaa4edab7305499&verbose=true&timezoneOffset=0&q";
 
 
 function loadData() {
@@ -35,6 +35,9 @@ function sendQuestion() {
 $(document).ready(function(){
     $("#sendButton").click(function(){
         console.log("Sennd Question");
-        console.log($("#question").text);
+        var fullurl = this.url + $("#question").val();
+        $.get(fullurl, function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
     });
 });
