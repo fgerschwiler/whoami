@@ -33,7 +33,7 @@ function sendQuestion() {
 }
 
 $(document).ready(function(){
-    $("sendButton").click(function(){
+    $(".sendButton").click(function(){
         console.log("sendQuestion");
     });
 });
