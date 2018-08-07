@@ -16,9 +16,23 @@
     <p>Hier die Verknüpfungen von Tiere zu ihren Eigenschaften erstellen</p>
     <div id = "relation">
         <div id = "animal">
-            <label>Tier</label>
-            <select id="animals">
+            <label id = "AnimalLabel">Animal</label>
+            <select id="animalsSelect">
             </select>
+        </div>
+        <div id = "entity">
+            <label id = "entityLabel">Entity</label>
+            <select id "entitiesSelect">
+            </select>
+        </div>
+        <div id = "role">
+            <label id = "roleLabel">Rolle</label>
+            <select id "rolesSelect">
+            </select>
+        </div>
+        <div id = "relation">
+            <input type="checkbox" name="isRelation" value="isInRelation">has a relation<br>
+            <button id = "save">speichern</button>
         </div>
     </div>
     <div id="response"></div>

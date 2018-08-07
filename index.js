@@ -77,10 +77,13 @@ $.ajax({
             {
                 $("#response").append($('<p>' + entity.name + '</p>'));
                 $("#response").append($('<ul>'));
+                if (entity.name != "Tier"){
+                    $("#entitiesSelect").append($('<option value="' + entity.name + '">'  + entity.name +  '</option>'));
+                }
                 for (role of entity.roles){
                     $("#response").append($('<li>' + role.name + '</li>'));
                     if (entity.name == "Tier"){
-                        $("#animals").append($('<option value="' + role.name + '">'  + role.name +  '</option>'));
+                        $("#animalsSelect").append($('<option value="' + role.name + '">'  + role.name +  '</option>'));
                     }
                 } 
                 $("#response").append($('</ul>'));
